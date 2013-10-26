@@ -1,0 +1,35 @@
+#container{
+	width: 960px;
+	margin: 0 auto; /*container with grey background and static position*/
+	background-color: #CCC; /* if all the values are same we need to give only 3 value */
+}
+
+#header{
+	padding: 10px;
+	background-color: blue;
+	color: white;
+
+}
+
+#content{
+	float: left;
+	width: 560px;
+	background-color: white;
+}
+
+.alignleft{
+
+	float: left; 
+	margin: 10px;
+}
+
+.sidebar{
+	float:left;
+	width: 200px;
+	background-color: #F00;
+}
+
+#footer{
+	clear: both; /* gives an element of full width */
+}
+

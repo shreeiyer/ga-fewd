@@ -1,0 +1,41 @@
+/* CSS file for Brook and Lyn
+--Layout
+--Typography */
+
+/* ===Layout===*/
+body{
+	font-size: 16px/1.6; /*1.6 gives white space*/
+	font-family: "Times New Roman", serif; /* provide alternative fonts for someone using Linux- Linux doesnt have times everyone has serif and sans serif */
+	background-color: #F3EBE9;
+}
+
+#container {    /*this is container id */ 
+
+	width: 960px;
+	margin: 0px  auto;/*values go from top right bottom and left pixels , in this case it will be centred*/
+	background-color: #FFFFFF;
+	padding: 30px; /*space around the container*/
+	
+} 
+
+
+/*====Typography===== (command + forward slash)*/
+
+h1{
+
+	text-transform: uppercase;
+	color: #656565;
+	font-family: "Helvetica",sans-serif;
+	font-weight: lighter;
+}
+
+img {/*image border, solid, dashed, */
+	border: 3px #CCCCCC solid; 
+}
+
+a img{ /* images in a link*/
+	padding: 1px;
+	}
+
+a {text-decoration: none; /*to avoid underlined image links*/
+	}

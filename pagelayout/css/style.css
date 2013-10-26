@@ -1,0 +1,51 @@
+body {
+	background-image: url('../images/pattern3.png');
+}#container {
+	
+	background-color: white;
+	padding: 0px;
+	width: 600px;
+
+}
+header {
+	font-size: 20px; 
+	text-indent: 20px
+	padding: 1px;
+	background-color: orange;
+
+}
+footer {
+	font-size: 10;
+	background-color: yellow;
+
+}
+
+p {
+	margin-left: 60px;
+	font-style: italic;
+}
+
+#container1{
+	
+	background-color: white;
+	padding: 0px;
+	width: 600px;
+
+}
+header {
+	font-size: 20px; 
+	text-indent: 20px
+	padding: 1px;
+	background-color: orange;
+
+}
+footer {
+	font-size: 10;
+	background-color: white;
+
+}
+
+p {
+	margin-left: 60px;
+	font-style: italic;
+}

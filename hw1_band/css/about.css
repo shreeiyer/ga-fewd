@@ -1,0 +1,92 @@
+/* 
+
+Project Name: music band
+Client: Kula Shekar
+Author: Shree Iyer
+Developed @ General Assembly in London
+
+*/
+
+body 
+	/* set up a background image */
+	{
+	background-image: url("../images/kula.jpg");
+
+
+	
+	/* the follow is the code to have the image display as a full page */
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    }
+
+    #container {
+	margin: 10px auto;
+	background-color: #FFCC33;
+	width: 900px;
+	box-radius:10px;
+	padding: 10px;
+    border-radius: 27px;
+    margin-left: 150px;
+
+}
+
+#container2{
+	margin: 10px auto;
+	background-color: white;
+	width: 800px;
+	box-radius:10px;
+	padding: 20px;
+    border-radius: 27px;
+    margin-left: 200px;
+
+}
+
+p1{ font-size: 15px;
+	font-family: Papyrus;
+
+}
+
+p{
+	text-align: center;
+}
+
+h1{ 
+	font-family: Papyrus;
+}
+header {
+	font-size: 20px; 
+	font-family: Papyrus;
+	text-align: center;
+
+}
+
+h5{background-color: white;
+	width: 300px;
+	box-radius:10px;
+	padding: 20px;
+    border-radius: 27px;
+    margin-left: 425px;
+	text-align: center;
+	font-family: Courier;
+	font-size:20px;}
+
+footer {
+	font-size: 10;
+	color: #FFCC00;
+	font-family: Courier;
+   font-weight: bolder;
+}
+
+h1{
+	font-size: 2em;
+	font-family: Papyrus;
+	color:#580000;
+}
+
+p4{ font-size: 20px;
+	font-family: Courier;
+   font-weight: bold;}

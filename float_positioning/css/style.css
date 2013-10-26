@@ -1,0 +1,40 @@
+.container{
+	width: 800px;
+	margin: 10px auto; /*container with grey background and static position*/
+	background: #CCC; /* if all the values are same we need to give only 3 value */
+}
+
+.box {/* class box */
+	width:100px;
+	height: 100px;  /*block level elements will always sit one under another - stacking*/
+	margin:10px;
+	padding:10px;
+	background: blue;
+}
+
+.left {
+	float: left; /*allow things to sit on the right */
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.clearfix:after { /* expands collapsed parent to clear its height past its floating children */
+ 
+    content: "."; /* adds html text of period symbol (:after) all opther children inside the parent with is .clear:after class applied to it. */
+	
+	display: block; /* set newly created content: to display block */
+	
+	clear: both; /* sets the '.' content to clear past all of the floating children giving a height reference. */
+	
+	visibility: hidden; /* make the '.' content invisible. */
+	
+	line-height: 0; /* make sure it has no text line-height */
+	height: 0; /* make sue it has no physical height */
+}
+/*after an element - used with links, a.external link: after ;*/

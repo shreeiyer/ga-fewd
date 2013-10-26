@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ßtyled Form</title>
+
+</head>
+
+<body>
+
+	<form id="contact-form" name="contact-form" method="" action="">
+
+		<h3> Contact Form</h3>
+
+		<div class="field">
+			<label for="name"> Name:</label>
+			<input type="text" name="name" id="name" placeholder="Your name"/> <!-- placeholder is not avlbl on all browsers -->
+
+		</div>
+
+		<div class="field">
+			<label for="email">Email:</label>
+			<input type="email" name="email" id-"email" />  <!-- self closing element -->
+		</div>
+
+		<div class="field">
+			<h4> My ride: </h4>
+			<input type="checkbox" name="vehicle" id="bike" value="bike"/>
+			<label for ="bike">Bike</label>
+
+			<input type="checkbox" name="vehicle" id="car" value="car"/>
+			<label for ="car">Car</label>
+
+			<input type="checkbox" name="vehicle" id="dinosaur" value="dinosaur" />
+			<label for ="dinosaur">Dinosaur</label>

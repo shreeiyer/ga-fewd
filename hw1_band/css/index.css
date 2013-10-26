@@ -1,0 +1,83 @@
+/* 
+
+Project Name: music band
+Client: Kula Shekar
+Author: Shree Iyer
+Developed @ General Assembly in London
+
+*/
+
+body 
+	/* set up a background image */
+	{
+	background-image: url("../images/kula.jpg");
+
+
+	
+	/* the follow is the code to have the image display as a full page */
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    }
+    #container {
+	margin: 10px auto;
+	margin-top: 50px;
+	background-color: #FFCC33;
+	box-radius:10px;
+	width: 600px;
+	padding: 20px;	
+
+}
+
+
+header {
+	font-size: 20px; 
+	text-align: center;
+	font-family: Courier;
+	
+
+}
+
+h1{
+	font-size: 2em;
+	font-family: Papyrus;
+	color:#580000;
+}
+
+h2 {
+	font-size: 20px;
+	font-family: Papyrus;
+	
+}
+h3 {font-size: 25px;
+	font-family: Courier;
+	color: #580000;
+	}
+
+footer {
+	font-size: 10;
+	color: #FFCC00;
+	font-family: Courier;
+   font-weight: bolder;
+}
+
+ p {
+ 	text-align: center;
+
+ }
+
+ .p1 { 
+ 	font-size: 20px;
+	font-family: Courier;
+   font-weight: bold;
+}
+
+.p1 a {
+	text-decoration: none;
+}
+
+	
+

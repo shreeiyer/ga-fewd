@@ -1,0 +1,16 @@
+/*  
+Theme Name: CSS Font Stack
+Version: 1.0
+Description: Custom themes designed for CSS Font Stack.
+Author: Studio Snapsize
+Author URI: http://snapsize.com
+*/
+
+
+/* IMPORT STYLESHEETS AND HIDE FROM IE/MAC \*/
+@import url("css/reset.css");
+@import url("css/grid.css");
+@import url("css/master.css");
+@import url("css/forms.css");
+
+/* end import/hide */
