@@ -392,7 +392,7 @@ h2{
     font-size: 1.8em;
     margin-top: 50px;
     text-align: left;
-    color: #82683B;
+    color: #B86B00;
     clear: left;
     margin-bottom: 9px;
     padding-bottom: 5px;
@@ -596,7 +596,7 @@ hr {
     padding-top: 30px;
     border-top: solid #82683B; 
     height: 4px;
-    text-align: center;
+    text-align: left;
    /* color: #82683B;*/
         
 }
