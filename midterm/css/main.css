@@ -308,7 +308,7 @@ textarea {
 
 
 #socialmedia{
-    margin:20px 0 0 0;
+    margin:0px;
     float: right;
 }
 
@@ -323,6 +323,10 @@ textarea {
     float: right;
     background-position-y: 60px;
     
+}
+
+#socialmedia li{
+    float: right;
 }
 
 #socialmedia ul li a:hover {
@@ -457,7 +461,7 @@ nav {
      border-bottom: solid #81673A 4px;
      color: white;
 }
-li{
+#navigate li{
     float: left;
     width: 140px;
     height: 80px;
