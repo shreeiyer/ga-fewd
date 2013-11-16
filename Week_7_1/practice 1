@@ -1,0 +1,6 @@
+myArr = ['Hello', , 54.3, true];
+
+console.log(myArr[0]); //prints Hello 
+console.log(myArr[1]); //prints undefined 
+console.log(myArr[2]); //prints 54.3 
+console.log(myArr[3]); //prints true

@@ -1,16 +1,17 @@
-$(
+$(function() {
 
 
-  function(event) {
+
   	//Start to type below here. Make sure not to delete any "{}" braces. 
-var bgColor;
-bgColor=prompt("enter your favourite colour");
+var userColor;
+userColor=prompt("enter your favourite colour");
 
-console.log(bgColor+' - this will be the page background colour if it is yellow, green, red or blue. Otherwise it will go white.');
+console.log(userColor+' - this will be the page background colour if it is yellow, green, red or blue. Otherwise it will go white. ');
 
-if(bgColor=='red' || bgColor=='blue' || bgColor=='yellow' || bgColor=='green'){
+if( (userColor=='red') || (userColor=='blue') || (userColor=='yellow') || (userColor=='green')) 
+{
 	
-  $('body').css('background', bgColor);
+  $('body').css('background', userColor);
 }
 
 
@@ -20,6 +21,10 @@ else{
   $('body').css('background', 'white');
 
 }
+
+
+
+
 
 }
 );

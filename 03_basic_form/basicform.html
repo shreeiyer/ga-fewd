@@ -48,16 +48,28 @@
 
 		<div class="field">
 			<h4>City</h4>
-			<select name="degree">
+			<select name="degree" onchange>
 				<option value="-1"> Choose One </option>
-				<option value="london"> London </option>
-				<option value="Manchester"> Manchester </option>
+				<option value="london" selected="selected"> London </option>
+				<option value="Manchester" selected ="selected"> Manchester </option>
 				<option value="birmingham"> Birmingham </option>
 			</select>
+			
 		</div>
+		<script> 
+			$( "select" )
+			.change(function () {
+			var str = "";
+			$( "select option:selected" ).each(function() {
+			str += $( this ).text() + " ";
+			});
+			$( "h3" ).text( str );
+			})
+			.change();
+		</script>
 
 		<input type="submit" name="" class="button" value="Send" />
 
-
+<h3></h3>
 </body>
 </html>

@@ -346,8 +346,8 @@ li.rss a {
 }
 
 body {
-    background: #38291A;
-    color: #fff;
+    background: white;
+    color: black;
     text-align: left;
     font: 14px/20px georgia, times, "Times New Roman", serif;
     margin: 0;
@@ -459,13 +459,13 @@ nav {
     padding-left: 20px;
     padding-top: 30px;
      border-bottom: solid #81673A 4px;
-     color: white;
+     color: #38291A;
 }
 #navigate li{
     float: left;
     width: 140px;
     height: 80px;
-    color: white;
+    color: #38291A;
 }
 
 #navigate ul li a {
@@ -473,7 +473,7 @@ nav {
     display: block; /*to make li a block element-block is inline element*/
     height: 80px;
     text-align: left;
-    color: white;
+    color: #38291A;
     text-decoration: none;
     font-size: 22px;
     font-family: 'Rum Raisin', sans-serif;
@@ -488,7 +488,7 @@ nav {
    }
 
 #navigate ul li a:link {
-    color: white;
+    color: #38291A;
 }
 
 #navigate ul li a:hover {
@@ -580,11 +580,19 @@ hr {
 }
 
 .para{
+    text-align: left;
+    font-family: georgia, times, "Times New Roman", serif;
+    font-size: 1.1em;  
+    color: #000; 
+}
+
+.paraone{
     /*color: white;*/
     text-align: left;
     font-family: georgia, times, "Times New Roman", serif;
     /*font-family: 'Rum Raisin', sans-serif;*/
-    font-size: 1.1em;   
+    font-size: 1.1em;  
+    color: white; 
 }
 
 .greentext{
@@ -592,7 +600,7 @@ hr {
 }
 
 .pright{
-    color: #82683B;
+    color: #000;
 }
 
 #footmargin{
