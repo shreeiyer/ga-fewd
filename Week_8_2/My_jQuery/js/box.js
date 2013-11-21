@@ -14,6 +14,8 @@ setTimeout(show, 1000); // box 2 will appear after 1 sec delay
 	 $('#box2').css({'display':'inherit'});
 	 $('#box2').show();
 	}
+
+
 	//$('.box2').css({'background':'blue','display':'inherit'});
 //}
 //else{
