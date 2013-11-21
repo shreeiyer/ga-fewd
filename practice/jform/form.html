@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>javascript form practice</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  	<h1> Javascript Form Practice </h1>
+
+  <div class="beep"></div>
+  <div class="brain"></div>
+  <div class="torso-round"></div>
+  <div class="foot"></div>
+Age <input type='text' id='age'/> <br>
+Height<input type='text' id='height' /> <br>
+Weight<input type='text' id='weight' onblur='Calculate();'/>
+<form name ="testarea" Method="Get" Action="form.html" id='form1'>
+Calories<input type='text' id='answer' name='ans' />
+</form>
+</body>
+<script>
+<!-- need to include this when using jquery: -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="form.js" type="text/JavaScript"></script>
+  </body>
+</html>
+
+

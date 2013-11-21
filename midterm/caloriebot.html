@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/calorie.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]> is someone uses brwser less than ie7
@@ -41,15 +42,43 @@
                             <li> <a href="about.html"> About </a> </li>
                             <li><a href="blog.html"> Blog </a> </li>
                             <li><a href="recipes.html"> Recipes </a> </li>
-                            <li><a class="active" href="share.html"> Share </a> </li>
+                            <li><a class="active" href="caloriebot.html"> Caloriebot </a> </li>
                     </ul>
                 </nav>
             </div> <!-- end div top -->
              
         </header>
+
+        <!-- main content -->
+
+<!-- <div class="container">
+    <div class="fifteen columns"> -->
+
+        <!-- <div class="container seven columns alpha"> -->
+    <div class="robot" id="beep"></div>
+  <div class="robot" id="brain"></div>
+  <div class="robot" id="torso-round"></div>
+  <div class="robot" id="leg"></div>
+   <div class = "robot" id="torso"> </div>
+  
+        <!-- </div>
+
+        <div class ="container four columns offset-by-four omega"> -->
+            Age <input type='text' id='age'/> <br>
+            Height<input type='text' id='height' /> <br>
+            Weight<input type='text' id='weight' onblur='Calculate();'/>
+            <form name ="testarea" Method="Get" Action="caloriebot.html" id='form1'>
+            Calories<input type='text' id='answer' name='ans' />
+            </form>
+       <!--  </div>
+    
+
+    </div>
+</div> -->
        
 <!--  <footer id="footmargin"> -->
-            <div id="foot">
+
+<footer id="footmargin">
 
 <div class="container">
     <div class="fifteen columns">
@@ -68,8 +97,7 @@
         <div class="container five columns">
             <p>At Healthy Veggie you will find great food facts and recipes to help you eat your way to good health. Mind you this is not just for those on a diet! Rather Healthy Veggie is for anyone  who wants to eat and feed healthy food. </p>
         </div>
-
-        <div class="container five columns omega">
+            <div class="container five columns omega">
             <div id="socialmedia">
                         <ul>
                         <li class="linkedin"><a href="#">LinkedIn</a></li>
@@ -77,29 +105,25 @@
                         <li class="facebook"><a href="#">Facebook</a></li>
                         <li class="rss"><a href="#">RSS</a></li>
                         </ul>
-                    </div> 
+            </div> 
 
-          <!-- <img class="imgfloat"src="images/Twitter.jpg">
-            <img class="imgfloat"src="images/Facebook.jpg">
-            <img class="imgfloat"src="images/googleplus.jpg"> -->
-        </div>
+             </div>
 
     </div> <!-- ending div fifteen columns -->
 </div> <!-- ending container div -->
 
 
-
 </footer>  
             
-    </div> <!-- <ending div wrapper-> -->
+   <!--  </div> <ending div wrapper->  -->
 
 
 
 
-
-
+        
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- latest version of j query -->
+         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
