@@ -5,12 +5,6 @@
 setTimeout(fade_out, 7500); // box will fade in 1 secs
 setTimeout(show, 7500); // box 2 will appear after 1 sec delay
 
-setTimeout(fade_out, 1000); // box will fade in 1 secs
-setTimeout(show, 1000); // box 2 will appear after 1 sec delay
-
-
-setTimeout(fade_out, 1000); // box will fade in 1 secs
-setTimeout(show, 1000); // box 2 will appear after 1 sec delay
 
 
 
