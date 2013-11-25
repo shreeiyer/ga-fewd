@@ -406,11 +406,22 @@ h2{
 }
 
 h3{
-    
+    /* color green*/
     font-size: 1.6em;
     text-align: left;
     color: #B8BE1B;
    
+}
+
+h4{
+    color: #38291A;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Rum Raisin', sans-serif;
+}
+
+.dashed{
+border-bottom: 1px dashed #B8BE1B;
 }
 
 .parabox{
@@ -561,8 +572,8 @@ hr {
     border: 0;
     border-style:solid;
     width: 100%;
-    color: #82683B;
-    background-color: #82683B;
+    color: white;
+    background-color: white;
     height: 4px;
     text-align: center;
     margin-bottom: 30px;
@@ -723,4 +734,46 @@ border-right: 150px solid #bc6;
 border-radius: 150px 150px 100px 100px;
 }
 
+/*speech bubble*/
 
+
+#speech1{
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+#speech2{
+    text-align: left;
+    margin-bottom: 60px;
+    display: none;
+}  
+
+#speech3{
+    text-align: left;
+    margin-bottom: 60px;
+    display: none;
+}  
+
+
+.speech-bubble {
+    background-color: #f8f8f8;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+
+}
+
+.speech-bubble .arrow {
+    border-style: solid;
+    position: absolute;
+}
+
+ 
+.bottom {
+    border-color: #c8c8c8 transparent transparent transparent;
+    border-width: 8px 8px 0px 8px;
+    bottom: -9px;
+}

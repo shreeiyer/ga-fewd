@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8"> <!-- utf8 is used to describe text- its enormous space for characs to fit in -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- if your IE  -->
-        <title></title>
+        <title>Caloriebot</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- tells iphone browser to render the page with actual width -->
 
@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+       
     </head>
     <body>
         <!--[if lt IE 7]> is someone uses brwser less than ie7
@@ -25,7 +25,9 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+
         <div id="wrapper">
+           <div class="container sixteen columns">
         <header class="clearfix">
                 
              <div id ="top"> 
@@ -47,33 +49,111 @@
             </div> <!-- end div top -->
              
         </header>
+      </div>
 
         <!-- main content -->
 
-<!-- <div class="container">
-    <div class="fifteen columns"> -->
+<div class="container">
+    <div class="container sixteen columns">
 
-        <!-- <div class="container seven columns alpha"> -->
-    <div class="robot" id="beep"></div>
-  <div class="robot" id="brain"></div>
-  <div class="robot" id="torso-round"></div>
-  <div class="robot" id="leg"></div>
-   <div class = "robot" id="torso"> </div>
-  
-        <!-- </div>
+            <div class ="container seven columns offset-by-four">
+                
+                 
+                 <div id="speech1">
+                 <div class="speech-bubble">
+                      <div class="arrow bottom"></div>
+                      <h4> Hi! I'm FLUB, the Caloriebot! I calculate calories</h4>
+                      </div>
+                </div>
 
-        <div class ="container four columns offset-by-four omega"> -->
-            Age <input type='text' id='age'/> <br>
-            Height<input type='text' id='height' /> <br>
-            Weight<input type='text' id='weight' onblur='Calculate();'/>
-            <form name ="testarea" Method="Get" Action="caloriebot.html" id='form1'>
-            Calories<input type='text' id='answer' name='ans' />
-            </form>
-       <!--  </div>
+                <div id="speech2">
+                    <div class="speech-bubble">
+                      <div class="arrow bottom"></div>
+                      <h4> This was me 6 months back, before I discovered Healthy Veggie.. </h4>
+                    </div>
+                </div>
+
+                <div id="speech3">
+                    <div class="speech-bubble">
+                      <div class="arrow bottom"></div>
+                      <h4> Look at me now! Thanks to HEALTHY VEGGIE!!
+                       </h4>
+                    </div>
+                </div>
+
+
+            </div>
+
+        <div class="container seven columns alpha">
+
+                        <div class="robot" id="beep"></div>
+                      <div class="robot" id="brain"></div>
+                      <div class="robot" id="torso-round"></div>
+                       <div class = "robot" id="torso"> </div>
+                      <div class="robot" id="leg"></div>
+        </div> <!-- closing nine column div -->
+
+       
+            
     
 
-    </div>
-</div> -->
+        <div class ="container five columns offset-by-four omega">
+            <h1> Find out how many calories you need per day </h1>
+            <div class="dashed"> </div>
+
+            <form name ="calcount" Method="Get" Action="caloriebot.html" id='calform'>
+
+               <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male" id="1">Male
+            <input type="radio" name="gender" value="female" id="2">Female <br><br>
+
+            Age <input type='text' id='age'/> 
+          
+
+            Height<input type='text' id='height' /> 
+
+            Weight<input type='text' id='weight' onblur='CalorieCount();'/>
+
+            Calories/day<input type='text' id='answer' name='ans' />
+            </form>
+        </div>
+    
+
+    </div>  <!-- closing sixteen columns
+</div> <!-closing container -->
+
+<hr>
+
+
+
+<h1>Find out how many calories you consume in a day </h1>
+
+<div class="dashed"> </div>
+
+
+
+Select what you eat for Breakfast:
+
+<form id = 'breakfast' name = 'breakfast' Method= "Get" Action="index.html">
+
+<input type="checkbox" name="bfast" id="eggs" value= "70"/> 
+
+Eggs 
+
+<input type="checkbox" name="bfast" id="toast" value="145"/>
+Bread toast with butter
+
+<input type="checkbox" name="bfast" id="cereal" value="370"/>
+100gm Cereal with semi-skimmed milk
+
+<h3> </h3>
+
+bdfdfhd
+djfkjd
+dmnbfmd
+
+</form>
+
        
 <!--  <footer id="footmargin"> -->
 
@@ -114,27 +194,19 @@
 
 </footer>  
             
-   <!--  </div> <ending div wrapper->  -->
+   </div><!--  </div> <ending div wrapper->  -->
 
 
 
 
         
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- latest version of j query -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- latest version of j query -->
          <script src="js/calorie.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+       
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js'; 
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+       
     </body>
 </html>
