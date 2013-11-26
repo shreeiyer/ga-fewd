@@ -43,7 +43,7 @@ function CalorieCount()
 
   console.log(selectedGender);
   
-if(selectedGender == ' male'){
+if(selectedGender == 'male'){
  document.getElementById('answer').value= 10 * parseFloat(weight) + 6.25*parseFloat(height) - 5 * parseFloat(age) + 5;}
 
  else{
