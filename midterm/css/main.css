@@ -407,17 +407,82 @@ h2{
 
 h3{
     /* color green*/
-    font-size: 1.6em;
+    font-size: 2em;
     text-align: left;
     color: #B8BE1B;
+    font-family: 'Rum Raisin', sans-serif;
    
 }
 
+
+.invalidtext{
+    color: red;
+    font-weight: bolder;
+}
+
+.calorietext{
+    /* color chocolate brown*/
+    font-size: 1.25em;
+    text-align: left;
+    color: #81673A;
+    font-weight: bolder;
+    margin-bottom: -25px;
+}
+
+.totalCalText{
+     /* color chocolate brown*/
+    font-size: 1.25em;
+    text-align: left;
+    color: #000;
+    font-weight: bolder;
+    padding-left: 20px;
+    margin-top: 60px;
+}
+
+/*form text*/
+.calorie{
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+/*speech bubble text*/
 h4{
     color: #38291A;
     text-decoration: none;
     font-size: 22px;
     font-family: 'Rum Raisin', sans-serif;
+} 
+
+/*calorie counter headings*/
+h5{
+    font-size: 35px;
+    text-align: left;
+    color: #38291A;
+    font-weight: bolder;
+    font-family: 'Rum Raisin', sans-serif;
+     border-bottom: 1px dashed #B8BE1B;
+     margin-bottom: 9px;
+     margin-top: 60px;
+    padding-bottom: 5px;
+    line-height: 1.3em;
+}
+
+input[type="checkbox"] {
+display: inline;
+width: 20px;
+height: 20px;
+margin-right: 3px;
+margin-left: 10px;
+text-indent: 10px;
+}
+
+
+#calorieButton{
+    margin-top: 50px;
+    float: left;
+    margin-right: 20px;
+    font-size: large;
+
 }
 
 .dashed{
@@ -426,10 +491,18 @@ border-bottom: 1px dashed #B8BE1B;
 
 .parabox{
     width: 556px;
-    height: 400px;
+    height: 500px;
     background: #432E24;
 
 }
+
+.paraboxBlog{
+    width: 556px;
+    height: 900px;
+    background: #432E24;
+
+}
+
   header{
     width: 960px;
     height: 110px;

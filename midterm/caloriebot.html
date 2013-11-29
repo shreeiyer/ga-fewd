@@ -53,7 +53,7 @@
 
         <!-- main content -->
 
-<div class="container">
+
     <div class="container sixteen columns">
 
             <div class ="container seven columns offset-by-four">
@@ -98,43 +98,43 @@
     
 
         <div class ="container five columns offset-by-four omega">
-            <h1> Find out how many calories you need per day </h1>
-            <div class="dashed"> </div>
 
-            <form name ="calcount" Method="Get" Action="caloriebot.html" id='calform'>
+            <h5> Find out how many calories you need per day </h5>
+           
+            <div class= "calorie">
+            <form name ="calcount" id ="calorie" Method="Get" Action="caloriebot.html" id='calform'>
 
-               <label for="gender">Gender:</label>
+               <!-- <label for="gender"> -->Gender: <!-- </label> -->
             <input type="radio" name="gender" value="male" id="1">Male
             <input type="radio" name="gender" value="female" id="2">Female <br><br>
 
-            Age <input type='text' id='age'/> 
-          
+            Age <input type='text' id='age' onblur='ageValidate();'/> <p id="invalidAge" class="invalidtext"> </p>
 
-            Height<input type='text' id='height' /> 
+            Height in cms<input type='text' id='height' onblur='heightValidate();'/> 
+            <p id="invalidHeight" class="invalidtext"></p>
 
-            Weight<input type='text' id='weight' onblur='CalorieCount();'/>
+            Weight in kgs<input type='text' id='weight' onblur='CalorieCount();'/> <h3 id="invalidWeight"> </h3>
 
             Calories/day<input type='text' id='answer' name='ans' />
             </form>
+
+          </div> <!-- closing div calorie -->
         </div>
     
 
-    </div>  <!-- closing sixteen columns
-</div> <!-closing container -->
-
-<hr>
+    </div>  <!-- losing sixteen columns> -->
 
 
-
-<h1>Find out how many calories you consume in a day </h1>
-
-<div class="dashed"> </div>
+<div class="container sixteen columns">
 
 
+<h5>Find out how many calories you consume in a day </h5>
 
-Select what you eat for Breakfast:
+<div class= "calorie">
 
-<form id = 'breakfast' name = 'breakfast' Method= "Get" Action="index.html">
+<h2>Breakfast:</h2>
+
+<form id = 'breakfast' name = 'breakfast' Method= "Get" Action="caloriebot.html">
 
 <input type="checkbox" name="bfast" id="eggs" value= "70"/> 
 
@@ -146,16 +146,76 @@ Bread toast with butter
 <input type="checkbox" name="bfast" id="cereal" value="370"/>
 100gm Cereal with semi-skimmed milk
 
-<h3> </h3>
 
-bdfdfhd
-djfkjd
-dmnbfmd
+</form>
+<h3 id ="bfasttext" class="calorietext"> </h3>
+
+
+<h2>Lunch:</h2>
+
+<form id = 'lunchmenu' name = 'lunchmenu' Method= "Get" Action="caloriebot.html">
+
+<input type="checkbox" name="lunch" id="ploughman" value= "450"/> 
+
+Cheddar Cheese Ploughman Sandwich
+
+<input type="checkbox" name="lunch" id="pasta" value="240"/>
+Spinach and pine nut pasta salad
+
+<input type="checkbox" name="lunch" id="fajita" value="224"/>
+Vegetable fajitas
+
+<input type="checkbox" name="lunch" id="baguette" value="250"/>
+Cheese and Tomato Baguette
+
+<input type="checkbox" name="lunch" id="fajita" value="224"/>
+Vegetable fajitas
+
+<input type="checkbox" name="lunch" id="indian" value="400"/>
+Vegetarian Indian Curry with Nan Bread
+
+<input type="checkbox" name="lunch" id="soup" value="70"/>
+Country Vegetable soup
 
 </form>
 
-       
-<!--  <footer id="footmargin"> -->
+<h3 id= "lunchtext" class="calorietext"> </h2>
+
+
+<h2>Dinner:</h2>
+
+<form id = 'dinnermenu' name = 'dinnermenu' Method= "Get" Action="caloriebot.html">
+
+<input type="checkbox" name="dinner" id="curry" value= "100"/> 
+Vegetable curry
+
+<input type="checkbox" name="dinner" id="jacket" value= "700"/> 
+Jacket Potato with Baked Beans
+
+<input type="checkbox" name="dinner" id="chilli" value= "100"/> 
+Vegetable chilli
+
+<input type="checkbox" name="dinner" id="frice" value= "300"/> 
+Fried Rice
+
+<input type="checkbox" name="dinner" id="tcurry" value= "100"/> 
+Thai vegeatable curry
+
+<input type="checkbox" name="dinner" id="pie" value= "100"/> 
+Lentil and Vegetable Cottage Pie
+
+</form>
+
+<h3 id = "dinnertext" class="calorietext"> </h3>
+
+
+<button name ="total" id="calorieButton" onclick="totalCal()"> Calculate Total Calories</button>
+
+<h3 id = "total" class="totalCalText"> </h3>
+
+</div>
+
+</div> <!-- closing container div -->
 
 <footer id="footmargin">
 
@@ -189,10 +249,10 @@ dmnbfmd
              </div>
 
     </div> <!-- ending div fifteen columns -->
-</div> <!-- ending container div -->
+</div> 
 
 
-</footer>  
+</footer>
             
    </div><!--  </div> <ending div wrapper->  -->
 
@@ -203,7 +263,7 @@ dmnbfmd
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- latest version of j query -->
          <script src="js/calorie.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        
        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
